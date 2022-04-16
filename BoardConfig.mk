@@ -43,7 +43,6 @@ TARGET_BOARD_PLATFORM := mt6768
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
-BOARD_KERNEL_CMDLINE += android.boot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x07c08000
@@ -110,6 +109,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
+TW_INPUT_BLACKLIST := "hbtp_vm"
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
@@ -133,27 +133,3 @@ PLATFORM_VERSION := 16.1.0
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
-# SHRP Configuration
-SHRP_PATH := $(DEVICE_PATH)
-SHRP_MAINTAINER := mastersenpai05
-SHRP_DEVICE_CODE := X683
-SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A_Only
-
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usbotg
-SHRP_REC := /dev/block/by-name/recovery
-
-# Theme SHRP
-SHRP_EXPRESS := true
-SHRP_DARK := true
-
-# Flashlight SHRP
-SHRP_CUSTOM_FLASHLIGHT := true
-SHRP_FONP_1 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
-SHRP_FONP_2 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
-SHRP_FONP_3 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
-SHRP_FLASH := 1 
-SHRP_FLASH_MAX_BRIGHTNESS := 200
