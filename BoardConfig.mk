@@ -161,3 +161,14 @@ SHRP_FONP_2 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
 SHRP_FONP_3 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
 SHRP_FLASH := 1 
 SHRP_FLASH_MAX_BRIGHTNESS := 200
+
+# SHRP ADDON
+INC_IN_REC_ADDON_1 := true
+
+SHRP_EXTERNAL_ADDON_PATH := $(SHRP_PATH)/addon
+SHRP_EXTERNAL_ADDON_1_NAME := "OrangeState-Disabler"
+SHRP_EXTERNAL_ADDON_1_INFO := "To disable OrangeState"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "orange_state_disabler_v0.3.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Disable Orange State"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Flashed successfully"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
