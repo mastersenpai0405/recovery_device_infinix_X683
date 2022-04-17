@@ -137,3 +137,27 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 TW_DEVICE_VERSION := INFINIX NOTE 8i
+
+# SHRP Configuration
+SHRP_PATH := device/infinix/X683
+SHRP_MAINTAINER := mastersenpai05
+SHRP_DEVICE_CODE := X683
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb-otg
+SHRP_REC := /dev/block/by-name/recovery
+
+# Theme SHRP
+SHRP_EXPRESS := true
+SHRP_DARK := true
+
+# Flashlight SHRP
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
+SHRP_FONP_2 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
+SHRP_FONP_3 := /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
+SHRP_FLASH := 1 
+SHRP_FLASH_MAX_BRIGHTNESS := 200
