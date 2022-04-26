@@ -33,7 +33,9 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.boot@1.1-impl-recovery \
+    android.hardware.boot@1.1-impl
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X683
